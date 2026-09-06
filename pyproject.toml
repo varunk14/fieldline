@@ -7,6 +7,9 @@ license = "MIT"
 license-files = ["LICENSE"]
 dependencies = [
     "pdfplumber==0.11.10",
+    "moss==1.7.3",
+    "python-dotenv==1.2.3",
+    "fastembed==0.8.0",
 ]
 
 [project.optional-dependencies]
