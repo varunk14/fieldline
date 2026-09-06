@@ -5,7 +5,9 @@ description = "Voice copilot for HVAC field technicians, built on sub-10ms retri
 requires-python = ">=3.11"
 license = "MIT"
 license-files = ["LICENSE"]
-dependencies = []
+dependencies = [
+    "pdfplumber==0.11.10",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -21,6 +23,9 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+fieldline = ["py.typed"]
 
 [tool.ruff]
 line-length = 100
